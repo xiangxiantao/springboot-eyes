@@ -7,7 +7,6 @@ import com.xxt.boot.dao.OrderCancelWorkOrderMapper;
 import com.xxt.boot.entity.OrderCancelWorkOrder;
 import com.xxt.boot.entity.OrderCancelWorkOrderExample;
 import org.junit.Test;
-import org.junit.jupiter.api.Order;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
