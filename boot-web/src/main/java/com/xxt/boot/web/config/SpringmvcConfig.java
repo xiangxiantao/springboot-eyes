@@ -14,7 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @Configuration
 //public class springmvcConfig extends WebMvcConfigurationSupport {
 //public class springmvcConfig extends WebMvcConfigurerAdapter {
-public class springmvcConfig implements WebMvcConfigurer {
+public class SpringmvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
