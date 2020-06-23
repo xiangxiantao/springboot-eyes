@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>success!</h1>
+<div th:text="${name}">这是不经过渲染显示的数据</div>
+
+<!--each 在那个标签上，就循环生成哪个标签-->
+<div th:each="user : ${users}">
+    <div th:text="${user}"></div>
+</div>
+
+
+</body>
+</html>
