@@ -14,7 +14,6 @@ import java.util.Set;
 /**
  * 在链接中携带local信息 l=zh_CN/l=en_US
  */
-@Component
 public class MyLocalResolver implements LocaleResolver {
 
     @Override
@@ -22,6 +21,7 @@ public class MyLocalResolver implements LocaleResolver {
         String locale = request.getParameter("l");
         if (!StringUtils.isEmpty(locale)){
             String[] info=locale.split("_");
+            //优化：区域信息一共那么几个，没有必要每次都创建新对象，应该用一个枚举或者静态变量保存，每次判断取复用对象
             return new Locale(info[0],info[1]);
         }
         return Locale.getDefault();

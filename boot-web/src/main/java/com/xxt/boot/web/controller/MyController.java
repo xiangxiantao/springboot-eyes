@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyController {
 
-    @RequestMapping("/index")
-    public String index() {
-        System.out.println("/index");
-        return "welcome xgimi";
-    }
+    //@RequestMapping("/index")
+    //public String index() {
+    //    System.out.println("/index");
+    //    return "welcome xgimi";
+    //}
 
     @RequestMapping("/index2")
     public String index2() {
