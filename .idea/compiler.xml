@@ -11,11 +11,12 @@
         <module name="boot-mybatis-generator" />
         <module name="boot-swagger2" />
         <module name="boot-dubbo-nacos-api" />
+        <module name="boot-swagger" />
         <module name="boot-dubbo-nacos-provider" />
         <module name="boot.dubbo.nacos.consumer" />
         <module name="boot-dubbo-nacos-consumer" />
         <module name="boot-dubbo-api" />
-        <module name="boot-swagger" />
+        <module name="boot-yml" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -40,6 +41,7 @@
       <module name="boot-swagger" options="-parameters" />
       <module name="boot-swagger2" options="-parameters" />
       <module name="boot-web" options="-parameters" />
+      <module name="boot-yml" options="-parameters" />
       <module name="boot.dubbo.nacos.consumer" options="-parameters" />
       <module name="springboot-eyes" options="-parameters" />
     </option>
