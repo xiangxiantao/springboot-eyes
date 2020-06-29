@@ -10,13 +10,13 @@
         <module name="boot-web" />
         <module name="boot-mybatis-generator" />
         <module name="boot-swagger2" />
-        <module name="boot-dubbo-nacos-api" />
-        <module name="boot-swagger" />
+        <module name="boot-yml" />
+        <module name="boot-dubbo-api" />
         <module name="boot-dubbo-nacos-provider" />
         <module name="boot.dubbo.nacos.consumer" />
         <module name="boot-dubbo-nacos-consumer" />
-        <module name="boot-dubbo-api" />
-        <module name="boot-yml" />
+        <module name="boot-dubbo-nacos-api" />
+        <module name="boot-swagger" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
