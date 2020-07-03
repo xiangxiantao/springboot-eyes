@@ -13,6 +13,7 @@ import org.springframework.http.converter.json.GsonHttpMessageConverter;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -57,6 +58,12 @@ public class HttpUtilTest {
         parameters.put("orderId", "201901121745000041536237");
         String forObject = restTemplate.getForObject(location, String.class,parameters);
         System.out.println(forObject);
+    }
+
+    @Test
+    public void stringTest() throws UnsupportedEncodingException {
+        String s=new String(" params:{\"invoicePayee\":\"\u5411\u663e\u6d9b\",\"invoicePayeeType\":\"1\",\"invoiceTaxCode\":\"\",\"operator\":\"\u5411\u663e\u6d9b\",\"orderId\":\"202007011747000074230204\"}. error code:ME0000000. error message:系统错误".getBytes(),"utf-8");
+        System.out.println(s);
     }
 
 }

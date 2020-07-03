@@ -39,13 +39,13 @@ public class SpringmvcConfig implements WebMvcConfigurer {
      * 添加拦截器，单springboot2之后的拦截器胡拦截静态资源，需要将静态资源的访问路径排除掉
      * @param registry
      */
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new LoginHandlerIntercepter())
-                .addPathPatterns("/**")
-                .excludePathPatterns("/", "/index", "/user/login")
-                .excludePathPatterns("/asserts/**","/webjars/**");
-    }
+    //@Override
+    //public void addInterceptors(InterceptorRegistry registry) {
+    //    registry.addInterceptor(new LoginHandlerIntercepter())
+    //            .addPathPatterns("/**")
+    //            .excludePathPatterns("/", "/index", "/user/login")
+    //            .excludePathPatterns("/asserts/**","/webjars/**");
+    //}
 
     /**
      * 配置静态资源访问路径与文件路径的对应关系，默认可以采用springboot的配置
