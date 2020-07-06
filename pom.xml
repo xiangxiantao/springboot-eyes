@@ -16,6 +16,8 @@
         <module>boot-dubbo-nacos-provider</module>
         <module>boot-dubbo-nacos-consumer</module>
         <module>boot-yml</module>
+        <module>boot-web-undertow</module>
+        <module>boot-web-javaee</module>
     </modules>
 
     <parent>
