@@ -23,7 +23,7 @@ public class BootTest {
     
     @Test
     public void testString() throws UnsupportedEncodingException {
-        String str=new String("\u6fc0\u6d3b\u7801\u4e0d\u5b58\u5728".getBytes(),"utf8");
+        String str=new String("\u5411\u663e\u6d9b".getBytes(),"utf8");
         System.out.println(str);
 
     }

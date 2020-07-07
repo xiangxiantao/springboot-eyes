@@ -10,6 +10,6 @@ public class MySimpleServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().print("响应出去的东西");
+        resp.getWriter().write("something happend");
     }
 }
