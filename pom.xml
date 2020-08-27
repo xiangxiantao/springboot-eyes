@@ -18,6 +18,7 @@
         <module>boot-yml</module>
         <module>boot-web-undertow</module>
         <module>boot-web-javaee</module>
+        <module>boot-mybatis-plus</module>
     </modules>
 
     <parent>
@@ -70,11 +71,6 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>com.xgimi.ird</groupId>
-            <artifactId>xgimi-common</artifactId>
-            <version>${xgimi-common.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
