@@ -1,0 +1,2 @@
+myExceptionFilter=com.xxt.boot.filter.MyExceptionFilter
+myAnoExceptionFilter=com.xxt.boot.filter.MyAnoExceptionFilter

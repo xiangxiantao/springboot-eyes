@@ -3,6 +3,7 @@ package com.xxt.boot.controller;
 import com.xxt.boot.service.SimpleService;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -17,8 +18,8 @@ public class SimpleController {
     private SimpleService simpleService;
 
     @RequestMapping("/index")
-    public String index() {
-        return simpleService.work("xxt");
+    public String index(@RequestParam("name") String name) {
+        return simpleService.work(name);
     }
 
 }
