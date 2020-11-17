@@ -19,6 +19,7 @@
         <module>boot-web-undertow</module>
         <module>boot-web-javaee</module>
         <module>boot-mybatis-plus</module>
+        <module>boot-single-data-source</module>
     </modules>
 
     <parent>
